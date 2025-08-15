@@ -36,6 +36,18 @@ Career & Skills Advisor is an **AI-powered career assistant** that:
 
 ---
 
+## 📸 Screenshots
+
+### 1. Home Screen – AI Powered Job Finder
+https://github.com/eashan18/Career-Advisor/blob/main/Screenshot%202025-08-15%20234402.png
+
+### 2. AI-Generated Career Roadmap & Skills Gap Analysis
+https://github.com/eashan18/Career-Advisor/blob/main/Screenshot%202025-08-15%20234420.png
+
+### 3. Nearby Jobs & Internships Map View
+https://github.com/eashan18/Career-Advisor/blob/main/Screenshot%202025-08-15%20234435.png
+https://github.com/eashan18/Career-Advisor/blob/main/Screenshot%202025-08-15%20234445.png
+
 
 
 
