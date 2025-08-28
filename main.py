@@ -1,7 +1,7 @@
 import streamlit as st
 import firebase_admin
 from firebase_admin import credentials, firestore
-from openai_chatbot import extract_career_info
+from open_ai_chatbot import extract_career_info
 import datetime
 import pandas as pd
 
