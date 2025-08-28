@@ -31,10 +31,12 @@ salary_data = {
 
 # ==================== Firebase Init ====================
 if not firebase_admin._apps:
-    # yeh secrets Streamlit Cloud ke secrets.toml me rakha hoga
-    firebase_config = st.secrets["firebase"]  
-    
-    # dict ko directly Certificate me pass kar sakte hain
+    # st.secrets ko dict banane ke liye convert karna zaroori hai
+    firebase_config = dict(st.secrets["firebase"])
+
+    # private_key ka "\n" fix karna zaroori hota hai
+    firebase_config["private_key"] = firebase_config["private_key"].replace("\\n", "\n")
+
     cred = credentials.Certificate(firebase_config)
     firebase_admin.initialize_app(cred)
 
