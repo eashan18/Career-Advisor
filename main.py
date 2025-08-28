@@ -31,9 +31,14 @@ salary_data = {
 
 # ==================== Firebase Init ====================
 if not firebase_admin._apps:
-    cred = credentials.Certificate("firebase-key.json.json")
+    # yeh secrets Streamlit Cloud ke secrets.toml me rakha hoga
+    firebase_config = st.secrets["firebase"]  
+    
+    # dict ko directly Certificate me pass kar sakte hain
+    cred = credentials.Certificate(firebase_config)
     firebase_admin.initialize_app(cred)
 
+# Firestore client
 db = firestore.client()
 
 # ==================== UI Header ====================
