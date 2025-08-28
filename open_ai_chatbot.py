@@ -2,7 +2,7 @@ import requests
 import json
 
 # API details
-API_KEY = "API KEY"  
+API_KEY = os.environ["API_KEY"] 
 API_URL = "https://api.groq.com/openai/v1/chat/completions"  
 
 # Function schema for career info extraction
