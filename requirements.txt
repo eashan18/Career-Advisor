@@ -1,0 +1,6 @@
+streamlit
+groq
+firebase-admin
+requests
+pandas
+python-dotenv
