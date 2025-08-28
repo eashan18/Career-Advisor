@@ -1,8 +1,10 @@
 import requests
 import json
+import streamlit as st
+import os
 
 # API details
-API_KEY = os.environ["API_KEY"] 
+API_KEY = st.secrets["API_KEY"] 
 API_URL = "https://api.groq.com/openai/v1/chat/completions"  
 
 # Function schema for career info extraction
